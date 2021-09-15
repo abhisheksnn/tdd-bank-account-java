@@ -6,4 +6,8 @@ public class Account {
     public void deposit(int i) {
         this.balance += i;
     }
+
+    public void withdraw(int i) {
+        balance -= i;
+    }
 }

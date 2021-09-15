@@ -15,4 +15,15 @@ public class AccountTest {
         account.deposit(100);
         assertThat("Deposit works fine", account.balance, is(100));
     }
+
+
+    @Test
+    public void withdrawAnAmountToDecreaseTheBalance() {
+        Account account = new Account();
+        account.deposit(100);
+        account.withdraw(100);
+        assertThat("Withdraw works fine", account.balance, is(0));
+    }
+
+
 }
