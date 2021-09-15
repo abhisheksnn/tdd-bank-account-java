@@ -10,4 +10,9 @@ public class Account {
     public void withdraw(int i) {
         balance -= i;
     }
+
+    public void transfer(Account account2, int i) {
+        this.withdraw(i);
+        account2.deposit(i);
+    }
 }
